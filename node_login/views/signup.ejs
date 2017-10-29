@@ -12,17 +12,21 @@
         <div class="card">
         <div class="card-content">
          <span class="card-title center-align"><%= title %></span>
-         <form method="post" action="/userpage">
+         <span class="card-title center-align"><%= msg %></span>
+         <form method="post" action="/signup/post">
                 <div class="input-field">
-                    <input class="validate" type="text" name="id">
-                    <label for="id">id</label>
+                    <input class="validate" type="text" name="username">
+                    <label for="username">username</label>
+                </div>       
+                <div class="input-field">
+                    <input class="validate" type="text" name="mail">
+                    <label for="mail">mail</label>
                 </div>           
                 <div class="input-field">
                     <input class="validate" type="password" name="password">
                     <label for="password">password</label>
                 </div>
-                <input type="submit" class="btn" value="login">
-                <a href="/signup">create new account</a>
+                <input type="submit" class="btn" value="SignUp">
             </form>
             </div>
         </div>
